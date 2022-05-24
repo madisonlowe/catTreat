@@ -1,0 +1,24 @@
+h1 {
+  font-family: "Patrick Hand", cursive;
+}
+body {
+  margin: 0;
+  background-color: tomato;
+}
+.container {
+  width: 40%;
+  background-color: #fff;
+  margin: auto;
+  text-align: center;
+  padding: 5%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#treat-block {
+  font-family: "Patrick Hand", cursive;
+}
+#treat-btn {
+  font-family: "Patrick Hand", cursive;
+}
