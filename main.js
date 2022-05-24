@@ -1,24 +1,8 @@
 /* OBJECTIVE
 To build a 'What Cat Treat Should I Give to Puddy Today?' generator.
 
-PLAN
-MAIN FUNCTIONALITY
-x Create an array.
-x This array should include cat treat options.
-x Create a function that loops through the array.
-x The function should index the array's whole length and randomly select an entry.
+PLAN V1.1
 
-CSS AND DOM INTERFACE
-x Create a header.
-x Create a 'p' tag.
-x Create a 'Generate Treat' button.
-x Event Listen to the button, and when it's clicked, run the function to randomise a treat.
-x reflect the returned treat variable into the empty 'p' tag.
-- Have a 'p' tag on page reminding people to double-check their dietary requirements for their cats.
-
-SIDE FUNCTIONALITY
-x Fetch data from a cat fact API
-x Display this data as a 'fun facts' banner on the page.
 
 REFACTORING
 - Put the cat facts on a fade-in-fade-out interval timer.
@@ -35,7 +19,6 @@ let treatBtn = document.querySelector("#treat-btn");
 treatBtn.addEventListener("click", randomTreat);
 
 let treatBlock = document.querySelector("#treat-block");
-let factBlock = document.querySelector("#fact-block");
 
 // CAT TREAT GENERATOR CODE.
 let treatArray = [
@@ -55,18 +38,10 @@ let treatArray = [
 function randomTreat() {
   let random = Math.floor(Math.random() * treatArray.length);
   let treat = treatArray[random];
-  treatBlock.innerText = treat;
+  if (treatArray[random] == treatBlock.textContent) {
+    randomTreat();
+  } else {
+    treatBlock.innerText = treat;
+  }
   return treat;
 }
-
-// CAT FACT API CODE.
-
-// async function catFact() {
-//   let response = await fetch("https://meowfacts.herokuapp.com/");
-//   let data = await response.json();
-//   let quote = data.data[0];
-//   factBlock.textContent = quote;
-//   return quote;
-// }
-
-// setInterval(catFact, 10000);
