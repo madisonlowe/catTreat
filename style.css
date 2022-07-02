@@ -1,24 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+
 h1 {
   font-family: "Patrick Hand", cursive;
 }
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: larger;
+}
+
 body {
   margin: 0;
-  background-color: tomato;
+  background-color: cornflowerblue;
 }
-.container {
-  width: 40%;
+
+main {
+  width: 400px;
   background-color: #fff;
   margin: auto;
-  text-align: center;
   padding: 5%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-#treat-block {
-  font-family: "Patrick Hand", cursive;
+
+header {
+  text-align: center;
 }
+
+dl {
+  padding-top: 10%;
+  line-height: 150%;
+  font-family: "Lato", sans-serif;
+  font-size: small;
+}
+
+.cat-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #fff;
+  margin: auto;
+  transform: translate(0, 25%);
+}
+
+#treat-block-intro {
+  text-align: left;
+  text-indent: 20%;
+  font-family: "Lato", sans-serif;
+  font-size: small;
+}
+
+#treat-block {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
 #treat-btn {
   font-family: "Patrick Hand", cursive;
+  display: block;
+  margin: 0 auto;
 }

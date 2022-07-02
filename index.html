@@ -5,6 +5,10 @@
     content="This is a randomiser web application, that randomises a potential treat to give to a pet cat on the click of a button."
   />
   <head>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐈</text></svg>"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,15 +16,28 @@
       href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
       rel="stylesheet"
     />
-    <title>Cat API Project</title>
+    <title>Café de Puds</title>
   </head>
   <body>
+    <div class="cat-circle"></div>
     <main>
-      <div class="container">
-        <h1>What treat should I give Puddy today?</h1>
-        <h2 id="treat-block">Thinking...</h2>
+      <header>
+        <h1>Café de Puds</h1>
+        <h2>For the little monsieur today?</h2>
+      </header>
+      <div class="generator-div">
+        <p id="treat-block-intro"><i>How about...</i></p>
+        <p id="treat-block">A little treat!</p>
         <button id="treat-btn">New Treat!</button>
       </div>
+      <dl>
+        <dt><b>La Bouillabaisse 00.00</b></dt>
+        <dd>Fish stew, from me to you.</dd>
+        <dt><b>Fricassée de Poulet 00.00</b></dt>
+        <dd>Winner of a chicken dinner!</dd>
+        <dt><b>Gâteaux 00.00</b></dt>
+        <dd>... For el gato.</dd>
+      </dl>
     </main>
     <script type="text/javascript" src="main.js"></script>
   </body>
