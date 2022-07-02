@@ -12,6 +12,8 @@ Or alternatively, click the 'Fork' button at the top of this page and follow the
 
 As this is written in three basic HTML, CSS and JavaScript files, there shouldn't be anything to install.
 
+You can also view a live deployment on [this webpage here](https://madisonlowe.github.io/catTreat/). As elements of the CSS are still a work in progress, this deployment might look a little wonky, depending on your viewport and device!
+
 ## Roadmap
 
 Upcoming edits:
